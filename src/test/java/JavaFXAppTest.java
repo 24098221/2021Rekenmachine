@@ -3,7 +3,10 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class JavaFXAppTest {
     @Test
-    void aDummyTest() {
-        assertEquals(0,0);
+    void    aComputeAddTest() {
+        JavaFXApp calculator =  new JavaFXApp();
+        assertEquals(5, calculator.computeAdd(2, 3));
+        assertEquals(10, calculator.computeAdd(4, 6));
+        assertEquals(0, calculator.computeAdd(-2, 2));
     }
 }
